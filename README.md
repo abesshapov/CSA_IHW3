@@ -27,3 +27,33 @@
 - строки с данными по дизассемблировании кода
 - строки: .globl change_chars; .globl factorial; .globl find_sh; .globl	find_ch
 - макрос leave заменяется на строчки: add rsp, value; mov rsp, rbp; pop rbp, где value взято из строчки sub rsp, value из прологов функций
+### 4. Комментарии:
+Комментарии были написаны, все изменения были отражены в программе: task3_final.s
+### 5. Отчет по тестированию:
+#### Тест 1: входные данные 1, ожидаемый результат в пределах [1.31172;1.31435];
+- C: ![image](https://user-images.githubusercontent.com/45789410/204143760-3b288d64-03cb-413e-939f-a7ba81f163f1.png)
+
+- Asm: ![image](https://user-images.githubusercontent.com/45789410/204143863-591a3ae0-b63a-4c92-a822-8f332e76b21e.png)
+
+#### Тест 2: входные данные 0, ожидаемый результат "Incorrect data";
+- C: ![image](https://user-images.githubusercontent.com/45789410/204143981-4a81e6da-36eb-46f2-8dc6-8dbc5569d43d.png)
+
+- Asm: ![image](https://user-images.githubusercontent.com/45789410/204144002-84d63c9c-edf0-4287-bcf9-2e7a0370df05.png)
+
+#### Тест 3: входные данные 5, ожидаемый результат "Incorrect data";
+- С: ![image](https://user-images.githubusercontent.com/45789410/204144043-78bb7b58-affd-421e-8942-1f7211689162.png)
+
+- Asm: ![image](https://user-images.githubusercontent.com/45789410/204144062-32bb2eed-fac0-42b6-a6ad-c734965a9cad.png)
+
+#### Тест 4: входные данные -4, ожидаемый результат "Incorrect data";
+- C: ![image](https://user-images.githubusercontent.com/45789410/204144112-cf0d941e-dfaf-4416-8674-475df3bf2ee5.png)
+
+- Asm: ![image](https://user-images.githubusercontent.com/45789410/204144137-e1b3952f-1fd3-44bf-9297-1eb3f4b67d22.png)
+
+#### Тест 5: входные данные -0.5, ожидаемый результат в пределах [-2.16612;-2.16179];
+- C: ![image](https://user-images.githubusercontent.com/45789410/204144230-e9c05d98-370f-44e8-abde-15beb81010e8.png)
+
+- Asm: ![image](https://user-images.githubusercontent.com/45789410/204144249-369c934e-142a-43b4-8e85-042bfbf777b4.png)
+---
+## Вывод: все анонсированные цели были выполнены, программы успешно прошли тестирование, изменения, проведенные с asm-программой не повлияли на ее работоспособность.
+
